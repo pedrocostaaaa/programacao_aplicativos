@@ -1,0 +1,45 @@
+body{
+
+    background-color:#FFE4E1;
+}
+
+h2{
+    color: #424242;
+}
+
+.vermelho {
+
+    color:#FF0000;
+}
+
+.azul{
+
+    color:#000088;
+}
+
+.verde{
+
+    color:#008800;
+}
+
+table, th, tr{
+
+    border: 1px dashed black;
+    border-collapse: collapse;
+}
+
+.Frutas {
+
+    background-color:#E6E6FA;
+}
+
+.Verduras {
+
+    background-color: #B0E0E6;
+}
+
+.saudacao {
+
+    color:#000088;
+    text-align: center;
+}
