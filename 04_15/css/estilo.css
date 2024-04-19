@@ -48,7 +48,7 @@ div {
     width: 33%;
 }
 
-.grid-container{
+.grid-container {
     display: grid;
     width: 100%;
     grid-template-columns: 33% 33% 33%;
