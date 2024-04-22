@@ -1,0 +1,77 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.redondo {
+    background-color: rgb(250, 100, 255);
+    width: 300px;
+    height: 300px;
+    /* arredondando div */
+    border-radius: 100px 80px 40px;
+    /* criando espaçamento interno */
+    padding: 50px 100px 30px 10px;
+}
+
+.redondo h1 {
+    background-color: rgb(200, 255, 255);
+}
+
+.quadrado {
+    /* background-color: rgb(255, 255, 100); */
+    background-image: url("../img/java.jpg");
+    background-size: no-repeat;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+
+.quadrado p {
+    background-color: rgba(100, 255, 255, 0.5);
+}
+
+.quadrado h1 {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 240, 0.6);
+}
+
+.gradiente {
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(rgb(255, 255, 0), rgb(255, 0, 0), rgb(0, 240, 0));
+    padding: 10px;
+}
+
+.gradiente h1 {
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 2px 3px black;
+}
+
+.amarelo {
+    background-color: rgb(255, 255, 0);
+    width: 300px;
+    height: 200px;
+    border: 2px solid rgb(0, 0, 0);
+    transition: width 2s, transform 2s;
+}
+
+#rotacao {
+    margin-left: 100px;
+}
+
+#rotacao:hover {
+    width: 400px;
+    transform: rotate(20deg);
+}
+
+.noticias {
+    background-color: rgb(128, 128, 128);
+    width: 300px;
+    height: 100px;
+    overflow: hidden;
+    transition: height 2s;
+    border: 2px solid red;
+}
+
+.noticias:hover {
+    height: 200px;
+}
