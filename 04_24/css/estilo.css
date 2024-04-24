@@ -1,0 +1,87 @@
+.exemplo_background {
+    /* Endereço da imagem */
+    background-image: url("../img/bob.png");
+    /*Colocando imagem para repetir horizontalmente */
+    /* background-repeat: repeat-x; */
+    /* Colocando imagem para repetir verticalmente */
+    /* background-repeat: repeat-y; */
+    /* Colocando imagem apenas uma vez */
+    background-repeat: no-repeat;
+    /* Colocando posição */
+    background-position: center top;
+    /* Tornando o background fixo */
+    /* background-attachment: fixed; */
+    background-attachment: scroll;
+    background: rgb(145, 145, 145) url("../img/bob.png") no-repeat center top fixed;
+}
+
+/* borda pontilhada */
+.pontilhado {
+    border-style: dotted;
+}
+
+/* borda tracejada */
+.tracejado {
+    border-style: dashed;
+}
+
+/* selecionando espessura */
+.borda_maior {
+    border-style: solid;
+    border-width: 5px;
+}
+
+/* borda lado específico */
+.borda_topo {
+    border-top: 2px solid rgb(144, 200, 50);
+}
+
+.principal {
+    background-color: rgb(144, 200, 50);
+    height: 800px;
+}
+
+.conteudo {
+    background-color: pink;
+    /* colocando margem em um lado */
+    margin-left: 80px 20px;
+    margin-right: 80px 20px;
+    margin-bottom: 80px 20px;
+    margin-top: 80px 20px;
+    /* colocando margem nos 4 cantos */
+    /* margin: 20px 40px 60px 80px; */
+    height: 300px;
+    width: 400px;
+    /* Colocando o padding de um lado */
+    /* padding-top: 50px; */
+}
+
+/* Começa sem ser exibido */
+.conteudo_dropdown {
+    display: none;
+    background-color: gray;
+    width: 100px;
+    color: white;
+}
+
+
+.conteudo_dropdown li {
+    border-bottom: 1px solid white;
+    list-style-type: none;
+    padding: 5px 2px;
+}
+
+
+.conteudo_dropdown li:hover {
+    background-color: red;
+}
+
+/* remove o padding do ul que quer ver por padrão */
+.conteudo_dropdown ul {
+    padding: 0;
+}
+
+.dropdown:hover .conteudo_dropdown {
+    display: block;
+
+}
