@@ -8,35 +8,36 @@
         // Crie um array com o nome e o município de cada aluno
         // Crie uma tabela e com o laço de repetição preencha
 
-        let tabela = "<tr><th>Nome</th><th>Cidade</th></tr>"
         let alunoCidade = [
             ["Gabriel", "Serra"],
-            ["Emanoel", "Vitória"]
-            ["Heloisa", "Vila Velha"]
-            ["Pietro", "Vitória"]
-            ["Samara", "Vila Velha"]
-            ["Isaac", "Vila Velha"]
-            ["Mateus", "Cariacíca"]
-            ["Amanda", "Serra"]
-            ["Vitor", "Vitória"]
-            ["Sarah", "Vila Velha"]
-            ["Anna Julya", "Vitória"]
-            ["Daniel", "Serra"]
-            ["Aymar", "Vila Velha"]
-            ["Deivid", "Vila Velha"]
+            ["Emanoel", "Vitória"],
+            ["Heloisa", "Vila Velha"],
+            ["Pietro", "Vitória"],
+            ["Samara", "Vila Velha"],
+            ["Isaac", "Vila Velha"],
+            ["Mateus", "Cariacíca"],
+            ["Amanda", "Serra"],
+            ["Vitor", "Vitória"],
+            ["Sarah", "Vila Velha"],
+            ["Anna Julya", "Vitória"],
+            ["Daniel", "Serra"],
+            ["Aymar", "Vila Velha"],
+            ["Deivid", "Vila Velha"],
             ["Marco", "Vila Velha"]
         ]
 
-        tabela += "<tr><td>"+alunoCidade[0][0]+"</td><td>"+alunoCidade[0][1]+"</td></tr>"
     </script>
 </head>
 <body>
-    <table id = "alunoCidade">
+    <table id = "aluno">
 
     </table>
     <script>
-    
-        document.getElementById("alunoCidade").innerHTML = tabela
+        let tabela = "<tr><th>Aluno</th><th>Cidade</th></tr>"
+        for (let i = 0; i < alunoCidade.length; i++) {
+            tabela += "<tr><td>"+alunoCidade[i][0] +"</td><td>"+alunoCidade[i][1]+"<td><tr>"
+        }
+        document.getElementById("aluno").innerHTML = tabela;
     </script>
 </body>
 </html>
