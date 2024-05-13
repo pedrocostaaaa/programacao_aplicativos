@@ -1,60 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        // classes são abstrações finitas do mundo real
-        class Carro{
-            constructor(marca, placa, cor, ano){
-                this.marca = marca
-                this.placa = placa
-                this.cor = cor
-                this.ano = ano
-            }
-        }
-
-        // inicializando um array vazio
-        let carros = []
-        // criando um carro uno
-        let uno = new Carro("fiat", "xxy-4502", "vermelho", 2012)
-        carros.push(uno) // acrescentando o uno no array de carros
-
-        // criando um carro fusca
-        let fusca = new Carro("volkswagen", "uuu-8978", "branco", 1980)
-        carros.push(fusca) // acrescentar no array de carros
-        console.log(carros)
-
-        function carregarCarros(){
-            let html = "<tr><th>Marca</th><th>Placa</th><th>Cor</th><th>Ano</th></tr>"
-            
-            for(let i = 0; i < carros.length;i++){
-                html += "<tr>"
-                    html += "<td>"+carros[i].marca+"</td>"
-                    html += "<td>"+carros[i].placa+"</td>"
-                    html += "<td>"+carros[i].cor+"</td>"
-                    html += "<td>"+carros[i].ano+"</td>"
-                    html += "</tr>"
-            }
-
-            document.getElementById("listaCarros").innerHTML = html
-        }
-
-        function cadastrarCarro(){
-            let marca = document.getElementById("marca").value
-            let placa = document.getElementById("placa").value
-            let cor = document.getElementById("cor").value
-            let ano = parseInt (document.getElementById("ano").value)
-
-            let carro = new Carro (marca,placa,cor,ano)
-
-            carros.push(carro)
-            carregarCarros()
-
-        }
+        import Concessionaria from Concessionaria
     </script>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
+
 <body onload="carregarCarros()">
     <h1>Carros</h1>
     <table id="listaCarros">
@@ -76,4 +32,5 @@
         <button ondblclick="cadastrarCarro">Cadastrar</button>
     </div>
 </body>
+
 </html>
