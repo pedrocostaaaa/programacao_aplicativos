@@ -35,3 +35,10 @@
 #listaCarros, th, td{
     border: 1px solid black;
 }
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(240, 165, 165);
+    
+}
+
