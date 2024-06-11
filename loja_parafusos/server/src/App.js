@@ -1,18 +1,17 @@
 import express from 'express'; // importando o express
-import {ParafusosController} from './Controllers/ParafusosController.js';
-const parafusosController = new ParafusosController();
+import ParafusoController from './Controllers/ParafusoController.js';
 
-
-
-const server = express (); // iniciando o express
+const server = express(); // iniciando o express
 
 
 server.use(express.json()) // configurando o json
 
-server.get('/',(req,res)=>{
+server.get('/', (req, res) => {
     res.status(200).json("Servidor Funcionando");
 });
 
-server.get('/parafusos',parafusosController.read);
-
+server.get('/parafusos', ParafusoController.read);
+server.post('/parafusos', ParafusoController.create);
+server.put('/parafusos/:index', ParafusoController.update);
+server.delete('/parafusos/:index',ParafusoController.delete)
 server.listen(5000);
