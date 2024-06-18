@@ -12,6 +12,6 @@ server.get('/', (req, res) => {
 
 server.get('/parafusos', ParafusoController.read);
 server.post('/parafusos', ParafusoController.create);
-server.put('/parafusos/:index', ParafusoController.update);
-server.delete('/parafusos/:index',ParafusoController.delete)
+server.put('/parafusos/:id_parafuso', ParafusoController.update);
+server.delete('/parafusos/:index',ParafusoController.delete);
 server.listen(5000);

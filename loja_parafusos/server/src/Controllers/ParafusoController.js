@@ -1,3 +1,4 @@
+import parafusomodel from "../Models/parafusomodel.js";
 import ParafusoModel from "../Models/parafusomodel.js";
 class ParafusosController {
     constructor() {
@@ -20,16 +21,37 @@ class ParafusosController {
 
 
     read(req, res) {
-        res.status(200).json(ParafusoModel.read())
+        parafusomodel.read().then(
+            resposta => {
+                console.debug("Mostrando Parafusos");
+                res.status(resposta[0]).json(resposta[1])
+            }
+
+        ).catch(
+            resposta => {
+                console.debug("ERRO ao mostrar parafusos");
+                console.debug(resposta)
+                res.status(resposta[0]).json(resposta[1])
+            }
+        )
     }
 
     update(req, res) {
-        const index = req.params.index;
+        const id_parafuso = req.params.id_parafuso;
         const nome = req.body.nome;
 
-        ParafusoModel.update(index, nome);
-
-        res.status(204).json("Parafuso atualizado")
+        ParafusoModel.update(id_parafuso, nome).then(
+            resposta => {
+                console.debug("Atualizando parafusos")
+                res.status(resposta[0]).json(resposta[1])
+            }
+        ).catch(
+            resposta => {
+                console.debug("ERRO ao atualizar parafusos");
+                console.debug(resposta)
+                res.status(resposta[0]).json(resposta[1])
+            }
+        );
     }
 
     delete(req, res) {
