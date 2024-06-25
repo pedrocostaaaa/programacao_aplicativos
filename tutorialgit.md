@@ -20,3 +20,31 @@ git commit -m "O que foi realizado"
 
 //Subindo alterações
 git push -u origin main
+
+create database loja_parafusos;
+
+use loja_parafusos;
+
+create table parafusos(
+	id_parafuso int primary key auto_increment,
+    nome varchar(45)
+);
+
+-- iniciando o CRUD
+-- insert é o CREATE
+insert into parafusos (nome) values
+("estrela"),
+("frances"),
+("máquina")
+;
+
+-- SELECT read
+select * from parafusos;
+
+-- UPDATE é update
+update parafusos set nome="fenda" where id_parafuso=1;
+
+-- DELETE é delete
+
+delete from parafusos where id_parafuso=1;
+
