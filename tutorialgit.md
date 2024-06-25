@@ -48,3 +48,9 @@ update parafusos set nome="fenda" where id_parafuso=1;
 
 delete from parafusos where id_parafuso=1;
 
+npx nodemon src/App.js
+
+
+cd 04_05 
+cd server 
+
