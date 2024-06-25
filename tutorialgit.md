@@ -54,3 +54,9 @@ npx nodemon src/App.js
 cd 04_05 
 cd server 
 
+post create
+get read
+put update
+delete delete
+
+npx install
