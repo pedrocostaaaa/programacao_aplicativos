@@ -64,4 +64,6 @@ delete delete
 
 npm install nodemon
 
+npm install express
+
 npm install mysql2
