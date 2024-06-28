@@ -62,4 +62,6 @@ put update
 
 delete delete
 
-npx install
+npm install nodemon
+
+npm install mysql2
