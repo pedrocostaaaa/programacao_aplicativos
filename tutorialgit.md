@@ -67,3 +67,5 @@ npm install nodemon
 npm install express
 
 npm install mysql2
+
+http://loocalhost/500/categoria
